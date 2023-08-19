@@ -1,0 +1,53 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Los Fellas</ion-title>
+  </ion-toolbar>
+  <ion-buttons slot="end">
+    <ion-button routerLink="/login">Login</ion-button>
+    <ion-button id="click-trigger">Contato</ion-button>
+      <ion-popover trigger="click-trigger" triggerAction="click">
+        <ng-template>
+          <ion-content class="ion-padding">
+            <ion-icon name="logo-whatsapp"></ion-icon>
+            <ion-label>  (42) 99984-3771</ion-label>
+          </ion-content>
+          <ion-content class="ion-padding">
+            
+            <ion-icon name="logo-instagram"></ion-icon>
+            <ion-label>
+              <a href="https://www.instagram.com/lg_galeski/" class="custom-link" target="_blank"> lg_galeski</a>
+            </ion-label>
+
+          </ion-content>
+        </ng-template>
+      </ion-popover>
+    <ion-button routerLink="/sobre-nos">Sobre Nós</ion-button>
+  </ion-buttons>
+</ion-header>
+
+<ion-content>
+  <div class="image-grid">
+    <table>
+      <tr>
+        <td>
+          <div class="content-box">
+            <div>Texto aqui</div>
+          </div>
+        </td>
+        <td>
+          <img src="assets/images/2.jpg" alt="Imagem 2">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <img src="assets/images/3.jpg" alt="Imagem 3">
+        </td>
+        <td>
+          <div class="content-box">
+            <div>Texto aqui</div>
+          </div>
+        </td>
+      </tr>
+    </table>
+  </div>
+</ion-content>
