@@ -1,0 +1,39 @@
+<ion-header>
+  <ion-toolbar>
+    <a href="/home" class="page-title">
+      <ion-title>Los Fellas</ion-title>
+    </a>
+  </ion-toolbar>
+  <ion-buttons slot="end">
+    <ion-button routerLink="/login">Login</ion-button>      
+    <ion-button id="click-trigger">Contato</ion-button>
+      <ion-popover trigger="click-trigger" triggerAction="click">
+        <ng-template>
+          <ion-content class="ion-padding">
+            <ion-icon name="logo-whatsapp"></ion-icon>
+            <ion-label>  (42) 99984-3771</ion-label>
+          </ion-content>
+          <ion-content class="ion-padding">
+            
+            <ion-icon name="logo-instagram"></ion-icon>
+            <ion-label>
+              <a href="https://www.instagram.com/mestrelaboratorio/" class="custom-link" target="_blank"> mestrelaboratorio</a>
+            </ion-label>
+
+          </ion-content>
+        </ng-template>
+      </ion-popover>
+  </ion-buttons>
+</ion-header>
+
+<ion-content class="fullscreen">
+  <div class="login-container">
+    <ion-item>
+      <ion-input placeholder="Usuário"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input type="password" placeholder="Senha"></ion-input>
+    </ion-item>
+    <ion-button>Entrar</ion-button>
+  </div>
+</ion-content>

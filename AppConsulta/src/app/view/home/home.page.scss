@@ -84,8 +84,17 @@ ion-header {
   text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
 }
 
+.fullscreen {
+  --ion-safe-area-top: 0; /* Define a margem superior para 0 para começar após a header */
+  margin-top: var(--ion-safe-area-top);
+}
 
-
+.page-title {
+  text-decoration: none; /* Remova o sublinhado padrão do link */
+  color: white; /* Defina a cor do link */
+  display: flex;
+  align-items: center;
+}
 
 
 
